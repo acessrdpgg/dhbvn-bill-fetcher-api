@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Allow: /public/index.html
+
+Sitemap: https://dhbvn-lens.vercel.app/sitemap.xml

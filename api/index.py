@@ -73,7 +73,7 @@ def extract_dhbvn_data(account_no: str, mobile_no: str, email: str) -> dict:
         account_out = lbl_ac_no['value'] if lbl_ac_no and 'value' in lbl_ac_no.attrs else None
 
         if not account_out:
-            return {"success": false, "message": "Invalid Consumer Account Identification Number."}
+            return {"success": False, "message": "Invalid Consumer Account Identification Number."}
 
         lbl_name = post_soup.find('input', {'id': 'lblConsumerName'})
         lbl_address = post_soup.find('textarea', {'id': 'lblAddress'})

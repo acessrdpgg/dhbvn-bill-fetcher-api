@@ -6,16 +6,21 @@
 
     <title>DHBVN-Lens | Dakshin Haryana Electricity Bill ID Details Lookup Tool</title>
     <meta name="title" content="DHBVN-Lens | Dakshin Haryana Electricity Bill ID Details Lookup Tool">
-    <meta name="description" content="Free open-source OSINT utility interface to fetch account balances, consumer names, addresses, and billing metrics from DHBVN utility numbers seamlessly.">
-    <meta name="keywords" content="dhbvn bill check, check dhbvn online balance, dakshin haryana bijli vitran nigam account finder, check electricity bill haryana, dhbvn osint engine">
+    <meta name="description"
+          content="Free open-source OSINT utility interface to fetch account balances, consumer names, addresses, and billing metrics from DHBVN utility numbers seamlessly.">
+    <meta name="keywords"
+          content="dhbvn bill check, check dhbvn online balance, dakshin haryana bijli vitran nigam account finder, check electricity bill haryana, dhbvn osint engine">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dhbvn-lens.vercel.app/">
     <meta property="og:title" content="DHBVN-Lens | Utility Discovery Platform">
-    <meta property="og:description" content="Free open-source OSINT utility interface to fetch account balances, consumer names, addresses, and billing metrics from DHBVN utility numbers seamlessly.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:description"
+          content="Free open-source OSINT utility interface to fetch account balances, consumer names, addresses, and billing metrics from DHBVN utility numbers seamlessly.">
+    <meta property="og:image"
+          content="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -31,7 +36,8 @@
         }
     </script>
 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    <link rel="icon"
+          href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 
     <style>
         body { background-color: #022c22; }
@@ -63,304 +69,343 @@
 
 <body class="text-gray-100 min-h-[100dvh] flex flex-col items-center overflow-x-hidden overflow-y-scroll relative text-xs sm:text-sm selection:bg-brand selection:text-white">
 
-    <div id="ios-bg-fix"></div>
+<div id="ios-bg-fix"></div>
 
-    <div class="fixed top-8 left-6 md:left-12 text-brand opacity-10 text-2xl md:text-4xl animate-pulse -z-10"><i class="fa-solid fa-bolt"></i></div>
-    <div class="fixed top-24 right-10 md:right-20 text-teal-400 opacity-5 text-3xl md:text-5xl animate-bounce -z-10"><i class="fa-solid fa-plug"></i></div>
-    <div class="fixed bottom-20 left-10 md:left-24 text-emerald-500 opacity-10 text-2xl md:text-4xl animate-pulse -z-10"><i class="fa-solid fa-charging-station"></i></div>
+<div class="fixed top-8 left-6 md:left-12 text-brand opacity-10 text-2xl md:text-4xl animate-pulse -z-10"><i
+        class="fa-solid fa-bolt"></i></div>
+<div class="fixed top-24 right-10 md:right-20 text-teal-400 opacity-5 text-3xl md:text-5xl animate-bounce -z-10"><i
+        class="fa-solid fa-plug"></i></div>
+<div class="fixed bottom-20 left-10 md:left-24 text-emerald-500 opacity-10 text-2xl md:text-4xl animate-pulse -z-10"><i
+        class="fa-solid fa-charging-station"></i></div>
 
-    <main class="flex-grow flex flex-col items-center w-full max-w-2xl mt-4 sm:mt-6 px-4 relative z-10">
+<main class="flex-grow flex flex-col items-center w-full max-w-2xl mt-4 sm:mt-6 px-4 relative z-10">
 
-        <div class="text-center mb-4 w-full">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-brand mb-1 tracking-tight drop-shadow-sm">
-                <i class="fa-solid fa-bolt mr-1.5 text-emerald-400"></i>DHBVN-Lens
-            </h1>
-            <p class="text-emerald-300/80 text-xs sm:text-sm font-light">Dakshin Haryana Electricity Bill Registry Analysis Engine</p>
+    <div class="text-center mb-4 w-full">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-brand mb-1 tracking-tight drop-shadow-sm">
+            <i class="fa-solid fa-bolt mr-1.5 text-emerald-400"></i>DHBVN-Lens
+        </h1>
+        <p class="text-emerald-300/80 text-xs sm:text-sm font-light">Dakshin Haryana Electricity Bill Registry Analysis
+            Engine</p>
 
-            <div id="quote-box" class="mt-2 opacity-75 text-[11px] sm:text-xs italic text-teal-300 max-w-md mx-auto transition-opacity duration-500 px-2">
-                <span id="quote-text">"Harnessing open pipelines..."</span>
-                <span id="quote-author" class="block font-semibold mt-0.5 text-[9px] text-gray-400 uppercase tracking-wider"></span>
+        <div id="quote-box"
+             class="mt-2 opacity-75 text-[11px] sm:text-xs italic text-teal-300 max-w-md mx-auto transition-opacity duration-500 px-2">
+            <span id="quote-text">"Harnessing open pipelines..."</span>
+            <span id="quote-author"
+                  class="block font-semibold mt-0.5 text-[9px] text-gray-400 uppercase tracking-wider"></span>
+        </div>
+    </div>
+
+    <div class="glass-card w-full p-4 sm:p-6 rounded-2xl shadow-2xl transition-all duration-300 relative overflow-hidden">
+
+        <div id="history-container"
+             class="hidden mb-3 bg-emerald-950/30 px-3 py-1.5 rounded-lg border border-emerald-800/30 flex justify-between items-center transition-all">
+            <label class="text-[9px] sm:text-[10px] text-emerald-400 uppercase font-semibold flex items-center gap-1.5 whitespace-nowrap">
+                <i class="fa-solid fa-clock-rotate-left"></i> History
+            </label>
+            <select id="history-dropdown" onchange="selectFromHistory()"
+                    class="bg-transparent text-[10px] sm:text-xs text-emerald-200 focus:outline-none text-right flex-1 ml-2 cursor-pointer truncate max-w-[200px]">
+                <option value="" class="bg-emerald-950">-- Select Recent --</option>
+            </select>
+        </div>
+
+        <div class="flex flex-col space-y-2">
+            <label class="text-[10px] sm:text-xs text-emerald-300 uppercase tracking-widest font-semibold ml-1">Enter
+                10-Digit Consumer Account Number</label>
+            <div class="flex flex-col sm:flex-row gap-2">
+                <div class="relative flex-1">
+                    <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-emerald-500">
+                        <i class="fa-solid fa-file-invoice text-sm"></i>
+                    </div>
+                    <input type="text" id="account-input" placeholder="e.g. 1234567890"
+                           class="w-full bg-emerald-950/40 border border-emerald-800 text-white text-xs sm:text-sm rounded-lg pl-10 pr-4 py-2.5 sm:py-3 focus:outline-none focus:ring-1 focus:ring-brand focus:border-transparent transition shadow-inner">
+                </div>
+                <button onclick="performQuery()" id="action-btn"
+                        class="bg-gradient-to-r from-brand to-brandDark hover:from-emerald-400 hover:to-emerald-600 text-white font-bold py-2.5 sm:py-3 px-6 rounded-lg shadow-md transition transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center min-w-[120px]">
+                    <span id="btn-text">Execute</span>
+                    <i id="btn-icon" class="fa-solid fa-circle-nodes ml-2"></i>
+                </button>
             </div>
         </div>
 
-        <div class="glass-card w-full p-4 sm:p-6 rounded-2xl shadow-2xl transition-all duration-300 relative overflow-hidden">
+        <div id="error-banner"
+             class="hidden mt-4 bg-red-950/40 border border-red-500/30 text-red-200 px-3 py-2.5 rounded-xl flex items-start sm:items-center text-left">
+            <i class="fa-solid fa-circle-exclamation mr-2 mt-0.5 sm:mt-0 text-base text-red-400"></i>
+            <span id="error-text" class="text-xs font-medium"></span>
+        </div>
 
-            <div id="history-container" class="hidden mb-3 bg-emerald-950/30 px-3 py-1.5 rounded-lg border border-emerald-800/30 flex justify-between items-center transition-all">
-                <label class="text-[9px] sm:text-[10px] text-emerald-400 uppercase font-semibold flex items-center gap-1.5 whitespace-nowrap">
-                    <i class="fa-solid fa-clock-rotate-left"></i> History
-                </label>
-                <select id="history-dropdown" onchange="selectFromHistory()" class="bg-transparent text-[10px] sm:text-xs text-emerald-200 focus:outline-none text-right flex-1 ml-2 cursor-pointer truncate max-w-[200px]">
-                    <option value="" class="bg-emerald-950">-- Select Recent --</option>
-                </select>
-            </div>
+        <div id="loading-state" class="hidden mt-6 text-center py-6">
+            <i class="fa-solid fa-compass fa-spin text-3xl text-brand mb-2"></i>
+            <p class="text-xs text-emerald-300 animate-pulse font-medium">Requesting system nodes. Resolving backend
+                viewstate hashes...</p>
+        </div>
 
-            <div class="flex flex-col space-y-2">
-                <label class="text-[10px] sm:text-xs text-emerald-300 uppercase tracking-widest font-semibold ml-1">Enter 10-Digit Consumer Account Number</label>
-                <div class="flex flex-col sm:flex-row gap-2">
-                    <div class="relative flex-1">
-                        <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-emerald-500">
-                            <i class="fa-solid fa-file-invoice text-sm"></i>
-                        </div>
-                        <input type="text" id="account-input" placeholder="e.g. 1234567890"
-                               class="w-full bg-emerald-950/40 border border-emerald-800 text-white text-xs sm:text-sm rounded-lg pl-10 pr-4 py-2.5 sm:py-3 focus:outline-none focus:ring-1 focus:ring-brand focus:border-transparent transition shadow-inner">
-                    </div>
-                    <button onclick="performQuery()" id="action-btn"
-                            class="bg-gradient-to-r from-brand to-brandDark hover:from-emerald-400 hover:to-emerald-600 text-white font-bold py-2.5 sm:py-3 px-6 rounded-lg shadow-md transition transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center min-w-[120px]">
-                        <span id="btn-text">Execute</span>
-                        <i id="btn-icon" class="fa-solid fa-circle-nodes ml-2"></i>
-                    </button>
-                </div>
-            </div>
-
-            <div id="error-banner" class="hidden mt-4 bg-red-950/40 border border-red-500/30 text-red-200 px-3 py-2.5 rounded-xl flex items-start sm:items-center text-left">
-                <i class="fa-solid fa-circle-exclamation mr-2 mt-0.5 sm:mt-0 text-base text-red-400"></i>
-                <span id="error-text" class="text-xs font-medium"></span>
-            </div>
-
-            <div id="loading-state" class="hidden mt-6 text-center py-6">
-                <i class="fa-solid fa-compass fa-spin text-3xl text-brand mb-2"></i>
-                <p class="text-xs text-emerald-300 animate-pulse font-medium">Requesting system nodes. Resolving backend viewstate hashes...</p>
-            </div>
-
-            <div id="data-display" class="hidden mt-5 bg-emerald-950/20 p-3 sm:p-4 rounded-xl border border-emerald-800/50 shadow-inner">
-                <div class="flex flex-col items-center pb-4 border-b border-emerald-800/30">
-                    <div class="text-center w-full">
+        <div id="data-display"
+             class="hidden mt-5 bg-emerald-950/20 p-3 sm:p-4 rounded-xl border border-emerald-800/50 shadow-inner">
+            <div class="flex flex-col items-center pb-4 border-b border-emerald-800/30">
+                <div class="text-center w-full">
                         <span class="bg-emerald-900/50 text-[10px] text-emerald-300 px-2.5 py-1 rounded border border-emerald-700/50 font-semibold uppercase tracking-wider">
                             <i class="fa-solid fa-signature mr-1"></i> Consumer Registry Record Found
                         </span>
-                        <h3 id="display-name" class="text-lg sm:text-xl font-bold text-white mt-3 tracking-wide break-words"></h3>
+                    <h3 id="display-name"
+                        class="text-lg sm:text-xl font-bold text-white mt-3 tracking-wide break-words"></h3>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-2 sm:gap-3 mt-3 sm:mt-4">
+                <div class="bg-emerald-900/20 p-2.5 sm:p-3 rounded-lg border border-emerald-800/30 flex justify-between items-center">
+                    <div>
+                        <span class="text-emerald-400 text-[9px] sm:text-[10px] uppercase font-semibold tracking-wide block">Billing Target Address</span>
+                        <span id="display-address"
+                              class="text-gray-200 text-[11px] sm:text-sm font-medium block mt-0.5"></span>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 gap-2 sm:gap-3 mt-3 sm:mt-4">
-                    <div class="bg-emerald-900/20 p-2.5 sm:p-3 rounded-lg border border-emerald-800/30 flex justify-between items-center">
-                        <div>
-                            <span class="text-emerald-400 text-[9px] sm:text-[10px] uppercase font-semibold tracking-wide block">Billing Target Address</span>
-                            <span id="display-address" class="text-gray-200 text-[11px] sm:text-sm font-medium block mt-0.5"></span>
-                        </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3">
+                    <div class="bg-emerald-900/30 p-2.5 sm:p-3 rounded-lg border border-emerald-800/40 flex flex-col justify-center overflow-hidden">
+                        <span class="text-emerald-400 text-[9px] sm:text-[10px] uppercase font-semibold tracking-wide block">Consumer Code ID</span>
+                        <span id="display-acno"
+                              class="font-mono text-white text-sm sm:text-base font-bold mt-0.5 truncate"></span>
                     </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
-                        <div class="bg-emerald-900/30 p-2.5 sm:p-3 rounded-lg border border-emerald-800/40 flex flex-col justify-center overflow-hidden">
-                            <span class="text-emerald-400 text-[9px] sm:text-[10px] uppercase font-semibold tracking-wide block">Consumer Code ID</span>
-                            <span id="display-acno" class="font-mono text-white text-sm sm:text-base font-bold mt-0.5 truncate"></span>
-                        </div>
-                        <div class="bg-emerald-900/30 p-2.5 sm:p-3 rounded-lg border border-emerald-800/40 flex flex-col justify-center overflow-hidden">
-                            <span class="text-emerald-400 text-[9px] sm:text-[10px] uppercase font-semibold tracking-wide block">Transaction ID</span>
-                            <span id="display-trans" class="font-mono text-emerald-300 text-sm sm:text-base font-bold mt-0.5 truncate"></span>
-                        </div>
+                    <div class="bg-emerald-900/30 p-2.5 sm:p-3 rounded-lg border border-emerald-800/40 flex flex-col justify-center overflow-hidden">
+                        <span class="text-emerald-400 text-[9px] sm:text-[10px] uppercase font-semibold tracking-wide block">Transaction ID</span>
+                        <span id="display-trans"
+                              class="font-mono text-emerald-300 text-sm sm:text-base font-bold mt-0.5 truncate"></span>
                     </div>
+                    <div class="bg-emerald-900/30 p-2.5 sm:p-3 rounded-lg border border-emerald-800/40 flex flex-col justify-center overflow-hidden">
+                        <span class="text-emerald-400 text-[9px] sm:text-[10px] uppercase font-semibold tracking-wide block">Linked Mobile Node</span>
+                        <span id="display-mob"
+                              class="font-mono text-teal-300 text-sm sm:text-base font-bold mt-0.5 truncate"></span>
+                    </div>
+                </div>
 
-                    <div class="bg-gradient-to-r from-emerald-900/40 to-teal-900/40 p-3 sm:p-4 rounded-xl border border-emerald-600/30 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-0 mt-1 sm:mt-2">
-                        <div class="w-full sm:w-auto">
-                            <h4 class="text-white text-xs sm:text-sm font-bold">Total Bill Balance Outstanding</h4>
-                            <p class="text-emerald-400 text-[9px] sm:text-[10px]">Real-time synchronized public treasury metrics</p>
-                        </div>
-                        <div class="text-left sm:text-right w-full sm:w-auto overflow-hidden">
+                <div class="bg-gradient-to-r from-emerald-900/40 to-teal-900/40 p-3 sm:p-4 rounded-xl border border-emerald-600/30 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-0 mt-1 sm:mt-2">
+                    <div class="w-full sm:w-auto">
+                        <h4 class="text-white text-xs sm:text-sm font-bold">Total Bill Balance Outstanding</h4>
+                        <p class="text-emerald-400 text-[9px] sm:text-[10px]">Real-time synchronized public treasury
+                            metrics</p>
+                    </div>
+                    <div class="text-left sm:text-right w-full sm:w-auto overflow-hidden">
                             <span class="text-xl sm:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-brand break-words">
                                 Rs. <span id="display-amount"></span>
                             </span>
-                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
-    </main>
 
-    <div class="text-center mt-3 sm:mt-4 mb-2">
-        <button onclick="toggleModal(true)" class="text-gray-400 hover:text-brand transition duration-200 text-[11px] sm:text-xs flex items-center justify-center gap-1 mx-auto focus:outline-none bg-emerald-950/40 px-3 py-1.5 rounded-full border border-emerald-900 hover:border-emerald-800 shadow-sm">
-            <i class="fa-regular fa-circle-question text-sm"></i> Learn more, FAQ & Cookie Policy
-        </button>
     </div>
+</main>
 
-    <div id="faq-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
-        <div class="glass-card max-w-md w-full p-4 sm:p-6 rounded-2xl shadow-2xl border border-emerald-800 transform scale-95 transition-transform duration-300 max-h-[85vh] overflow-y-auto relative" onclick="event.stopPropagation()">
+<div class="text-center mt-3 sm:mt-4 mb-2">
+    <button onclick="toggleModal(true)"
+            class="text-gray-400 hover:text-brand transition duration-200 text-[11px] sm:text-xs flex items-center justify-center gap-1 mx-auto focus:outline-none bg-emerald-950/40 px-3 py-1.5 rounded-full border border-emerald-900 hover:border-emerald-800 shadow-sm">
+        <i class="fa-regular fa-circle-question text-sm"></i> Learn more, FAQ & Cookie Policy
+    </button>
+</div>
 
-            <div class="flex justify-between items-center pb-3 border-b border-emerald-800/50 mb-4">
-                <h2 class="text-white font-bold text-sm sm:text-base flex items-center gap-2">
-                    <i class="fa-solid fa-circle-info text-brand"></i> Project Insight & Cookie Policy
-                </h2>
-                <button onclick="toggleModal(false)" class="text-gray-400 hover:text-white transition p-1 rounded-lg hover:bg-emerald-900/50">
-                    <i class="fa-solid fa-xmark text-lg"></i>
-                </button>
+<div id="faq-modal"
+     class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="glass-card max-w-md w-full p-4 sm:p-6 rounded-2xl shadow-2xl border border-emerald-800 transform scale-95 transition-transform duration-300 max-h-[85vh] overflow-y-auto relative"
+         onclick="event.stopPropagation()">
+
+        <div class="flex justify-between items-center pb-3 border-b border-emerald-800/50 mb-4">
+            <h2 class="text-white font-bold text-sm sm:text-base flex items-center gap-2">
+                <i class="fa-solid fa-circle-info text-brand"></i> Project Insight & Cookie Policy
+            </h2>
+            <button onclick="toggleModal(false)"
+                    class="text-gray-400 hover:text-white transition p-1 rounded-lg hover:bg-emerald-900/50">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+        </div>
+
+        <div class="space-y-4 text-xs sm:text-sm text-gray-300">
+            <div>
+                <h3 class="text-emerald-400 font-semibold mb-1">How does the validation bypass work?</h3>
+                <p class="text-gray-400 leading-relaxed">DHBVN-Lens maps the transaction form tokens server-side. Since
+                    target gateway networks handle CAPTCHA evaluation strictly inside frontend client scripts, the
+                    processing engine drops custom bypass keys inside the structured network payload to verify balances
+                    directly.</p>
             </div>
-
-            <div class="space-y-4 text-xs sm:text-sm text-gray-300">
-                <div>
-                    <h3 class="text-emerald-400 font-semibold mb-1">How does the validation bypass work?</h3>
-                    <p class="text-gray-400 leading-relaxed">DHBVN-Lens maps the transaction form tokens server-side. Since target gateway networks handle CAPTCHA evaluation strictly inside frontend client scripts, the processing engine drops custom bypass keys inside the structured network payload to verify balances directly.</p>
-                </div>
-                <div>
-                    <h3 class="text-emerald-400 font-semibold mb-1">🍪 Cookie & Storage Usage Disclosure</h3>
-                    <p class="text-gray-400 leading-relaxed">This application uses localized cookie storage arrays exclusively to store history records of successfully inquired Consumer IDs. This permits quick re-query selection fields. No identity information, names, or addresses are stored, shared, or passed to external trackers.</p>
-                </div>
-                <div>
-                    <h3 class="text-emerald-400 font-semibold mb-1">Is this project affiliated with DHBVN?</h3>
-                    <p class="text-gray-400 leading-relaxed">No. This platform operates as an open independent OSINT tracking research dashboard utility communicating strictly via open public-facing endpoints.</p>
-                </div>
+            <div>
+                <h3 class="text-emerald-400 font-semibold mb-1">🍪 Cookie & Storage Usage Disclosure</h3>
+                <p class="text-gray-400 leading-relaxed">This application uses localized cookie storage arrays
+                    exclusively to store history records of successfully inquired Consumer IDs. This permits quick
+                    re-query selection fields. No identity information, names, or addresses are stored, shared, or
+                    passed to external trackers.</p>
             </div>
-
-            <div class="mt-5 pt-3 border-t border-emerald-800/30 text-right">
-                <button onclick="toggleModal(false)" class="bg-emerald-900/60 hover:bg-emerald-800 text-white font-medium py-1.5 px-4 rounded-lg text-xs transition active:scale-95">
-                    Close Document
-                </button>
+            <div>
+                <h3 class="text-emerald-400 font-semibold mb-1">Is this project affiliated with DHBVN?</h3>
+                <p class="text-gray-400 leading-relaxed">No. This platform operates as an open independent OSINT
+                    tracking research dashboard utility communicating strictly via open public-facing endpoints.</p>
             </div>
         </div>
+
+        <div class="mt-5 pt-3 border-t border-emerald-800/30 text-right">
+            <button onclick="toggleModal(false)"
+                    class="bg-emerald-900/60 hover:bg-emerald-800 text-white font-medium py-1.5 px-4 rounded-lg text-xs transition active:scale-95">
+                Close Document
+            </button>
+        </div>
     </div>
+</div>
 
-    <footer class="w-full text-center pb-4 text-emerald-600/60 text-[10px] sm:text-[11px] z-10 relative">
-        <p>Built with <i class="fa-solid fa-terminal text-teal-400 mx-0.5"></i> and <i class="fa-solid fa-bolt text-brand mx-0.5"></i> by <a href="https://github.com/acessrdpgg" target="_blank" class="text-emerald-400 hover:text-brand transition font-semibold underline">Avinash</a>.</p>
-    </footer>
+<footer class="w-full text-center pb-4 text-emerald-600/60 text-[10px] sm:text-[11px] z-10 relative">
+    <p>Built with <i class="fa-solid fa-terminal text-teal-400 mx-0.5"></i> and <i
+            class="fa-solid fa-bolt text-brand mx-0.5"></i> by <a href="https://github.com/acessrdpgg" target="_blank"
+                                                                  class="text-emerald-400 hover:text-brand transition font-semibold underline">Avinash</a>.
+    </p>
+</footer>
 
-    <script>
-        // Inspiring Tech Quotes Module Integration
-        function loadThemeQuote() {
-            const fallbacks = [
-                { content: "Efficiency is doing things right; effectiveness is doing the right things.", author: "Peter Drucker" },
-                { content: "The clean code always looks like it was written by someone who cares.", author: "Michael Feathers" },
-                { content: "Electricity is really just organized lightning.", author: "George Carlin" },
-                { content: "Code is like humor. When you have to explain it, it’s bad.", author: "Cory House" }
-            ];
-            const rand = fallbacks[Math.floor(Math.random() * fallbacks.length)];
-            document.getElementById('quote-text').innerText = `"${rand.content}"`;
-            document.getElementById('quote-author').innerText = `- ${rand.author}`;
-        }
-        loadThemeQuote();
+<script>
+    // Inspiring Tech Quotes Module Integration
+    function loadThemeQuote() {
+        const fallbacks = [
+            { content: "Efficiency is doing things right; effectiveness is doing the right things.", author: "Peter Drucker" },
+            { content: "The clean code always looks like it was written by someone who cares.", author: "Michael Feathers" },
+            { content: "Electricity is really just organized lightning.", author: "George Carlin" },
+            { content: "Code is like humor. When you have to explain it, it’s bad.", author: "Cory House" }
+        ];
+        const rand = fallbacks[Math.floor(Math.random() * fallbacks.length)];
+        document.getElementById('quote-text').innerText = `"${rand.content}"`;
+        document.getElementById('quote-author').innerText = `- ${rand.author}`;
+    }
+    loadThemeQuote();
 
-        // Cookie History Manager Implementation
-        const HISTORY_COOKIE_KEY = "dhbvn_lens_history";
+    // Cookie History Manager Implementation
+    const HISTORY_COOKIE_KEY = "dhbvn_lens_history";
 
-        function getCookieHistory() {
-            const nameEQ = HISTORY_COOKIE_KEY + "=";
-            const ca = document.cookie.split(';');
-            for(let i=0;i < ca.length;i++) {
-                let c = ca[i];
-                while (c.charAt(0)==' ') c = c.substring(1,c.length);
-                if (c.indexOf(nameEQ) == 0) {
-                    try {
-                        return JSON.parse(decodeURIComponent(c.substring(nameEQ.length,c.length)));
-                    } catch(e) { return []; }
-                }
-            }
-            return [];
-        }
-
-        function saveCookieHistory(accountNum, nameStr) {
-            let history = getCookieHistory();
-            // Filter out existing instances to place new entry at top
-            history = history.filter(item => item.id !== accountNum);
-            history.unshift({ id: accountNum, name: nameStr });
-            // Cap entry limits at top 5 records
-            if(history.length > 5) history.pop();
-
-            const jsonStr = encodeURIComponent(JSON.stringify(history));
-            // Expire cookies automatically after 180 days tracking cycles
-            const date = new Date();
-            date.setTime(date.getTime() + (180*24*60*60*1000));
-            document.cookie = `${HISTORY_COOKIE_KEY}=${jsonStr}; expires=${date.toUTCString()}; path=/; SameSite=Strict`;
-
-            renderHistoryDropdown();
-        }
-
-        function renderHistoryDropdown() {
-            const history = getCookieHistory();
-            const container = document.getElementById('history-container');
-            const dropdown = document.getElementById('history-dropdown');
-
-            if(history.length === 0) {
-                container.classList.add('hidden');
-                return;
-            }
-
-            // Clear prior values keeping first initialization hint option
-            dropdown.innerHTML = '<option value="" class="bg-emerald-950">-- Select Recent --</option>';
-            history.forEach(item => {
-                const opt = document.createElement('option');
-                opt.value = item.id;
-                opt.className = "bg-emerald-950 text-emerald-200";
-                opt.innerText = `${item.id} (${item.name.split(' ')[0]})`;
-                dropdown.appendChild(opt);
-            });
-            container.classList.remove('hidden');
-        }
-
-        function selectFromHistory() {
-            const dropdown = document.getElementById('history-dropdown');
-            if(dropdown.value) {
-                document.getElementById('account-input').value = dropdown.value;
+    function getCookieHistory() {
+        const nameEQ = HISTORY_COOKIE_KEY + "=";
+        const ca = document.cookie.split(';');
+        for(let i=0;i < ca.length;i++) {
+            let c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) {
+                try {
+                    return JSON.parse(decodeURIComponent(c.substring(nameEQ.length,c.length)));
+                } catch(e) { return []; }
             }
         }
+        return [];
+    }
 
-        // Initialize history list view frames on page entry load paths
+    function saveCookieHistory(accountNum, nameStr) {
+        let history = getCookieHistory();
+        // Filter out existing instances to place new entry at top
+        history = history.filter(item => item.id !== accountNum);
+        history.unshift({ id: accountNum, name: nameStr });
+        // Cap entry limits at top 5 records
+        if(history.length > 5) history.pop();
+
+        const jsonStr = encodeURIComponent(JSON.stringify(history));
+        // Expire cookies automatically after 180 days tracking cycles
+        const date = new Date();
+        date.setTime(date.getTime() + (180*24*60*60*1000));
+        document.cookie = `${HISTORY_COOKIE_KEY}=${jsonStr}; expires=${date.toUTCString()}; path=/; SameSite=Strict`;
+
         renderHistoryDropdown();
+    }
 
-        // Core Pipeline Execution Logic
-        async function performQuery() {
-            const inputVal = document.getElementById('account-input').value.trim();
-            if(!inputVal) return displayError("Please present a valid 10-digit customer account sequence.");
+    function renderHistoryDropdown() {
+        const history = getCookieHistory();
+        const container = document.getElementById('history-container');
+        const dropdown = document.getElementById('history-dropdown');
 
-            const btn = document.getElementById('action-btn');
-            const loader = document.getElementById('loading-state');
-            const displayBox = document.getElementById('data-display');
-
-            hideError();
-            displayBox.classList.add('hidden');
-            loader.classList.remove('hidden');
-            btn.disabled = true;
-            btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin text-base"></i>';
-
-            try {
-                const response = await fetch(`/api/lookup?account_no=${inputVal}`);
-                const result = await response.json();
-
-                if(!response.ok) throw new Error(result.detail || "System nodes returned unexpected operational records.");
-
-                document.getElementById('display-name').innerText = result.data.consumer_name;
-                document.getElementById('display-address').innerText = result.data.address;
-                document.getElementById('display-acno').innerText = result.data.account_number;
-                document.getElementById('display-trans').innerText = result.data.transaction_id;
-                document.getElementById('display-amount').innerText = result.data.amount_payable;
-
-                // Commit record arrays directly into persistent cookie tracking stacks
-                saveCookieHistory(result.data.account_number, result.data.consumer_name);
-
-                loader.classList.add('hidden');
-                displayBox.classList.remove('hidden');
-            } catch (err) {
-                loader.classList.add('hidden');
-                displayError(err.message);
-            } finally {
-                btn.disabled = false;
-                btn.innerHTML = '<span id="btn-text">Execute</span><i class="fa-solid fa-circle-nodes ml-2"></i>';
-            }
+        if(history.length === 0) {
+            container.classList.add('hidden');
+            return;
         }
 
-        function displayError(msg) {
-            const banner = document.getElementById('error-banner');
-            document.getElementById('error-text').innerText = msg;
-            banner.classList.remove('hidden');
-        }
-        function hideError() { document.getElementById('error-banner').classList.add('hidden'); }
+        // Clear prior values keeping first initialization hint option
+        dropdown.innerHTML = '<option value="" class="bg-emerald-950">-- Select Recent --</option>';
+        history.forEach(item => {
+            const opt = document.createElement('option');
+            opt.value = item.id;
+            opt.className = "bg-emerald-950 text-emerald-200";
+            opt.innerText = `${item.id} (${item.name.split(' ')[0]})`;
+            dropdown.appendChild(opt);
+        });
+        container.classList.remove('hidden');
+    }
 
-        // Modal Overlay Interface Controller Mechanics
-        function toggleModal(show) {
-            const modal = document.getElementById('faq-modal');
-            const contentBox = modal.querySelector('.glass-card');
-            if (show) {
-                modal.classList.remove('opacity-0', 'pointer-events-none');
-                contentBox.classList.replace('scale-95', 'scale-100');
-                document.body.style.overflow = 'hidden';
-            } else {
-                modal.classList.add('opacity-0', 'pointer-events-none');
-                contentBox.classList.replace('scale-100', 'scale-95');
-                document.body.style.overflow = '';
-            }
+    function selectFromHistory() {
+        const dropdown = document.getElementById('history-dropdown');
+        if(dropdown.value) {
+            document.getElementById('account-input').value = dropdown.value;
         }
+    }
 
-        document.getElementById('faq-modal').addEventListener('click', () => toggleModal(false));
-        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') toggleModal(false); });
-        document.getElementById('account-input').addEventListener('keypress', (e) => { if (e.key === 'Enter') performQuery(); });
-    </script>
+    // Initialize history list view frames on page entry load paths
+    renderHistoryDropdown();
+
+    // Core Pipeline Execution Logic
+    async function performQuery() {
+        const inputVal = document.getElementById('account-input').value.trim();
+        if(!inputVal) return displayError("Please present a valid 10-digit customer account sequence.");
+
+        const btn = document.getElementById('action-btn');
+        const loader = document.getElementById('loading-state');
+        const displayBox = document.getElementById('data-display');
+
+        hideError();
+        displayBox.classList.add('hidden');
+        loader.classList.remove('hidden');
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin text-base"></i>';
+
+        try {
+            const response = await fetch(`/api/lookup?account_no=${inputVal}`);
+            const result = await response.json();
+
+            if(!response.ok) throw new Error(result.detail || "System nodes returned unexpected operational records.");
+
+            document.getElementById('display-name').innerText = result.data.consumer_name;
+            document.getElementById('display-address').innerText = result.data.address;
+            document.getElementById('display-acno').innerText = result.data.account_number;
+            document.getElementById('display-trans').innerText = result.data.transaction_id;
+            document.getElementById('display-amount').innerText = result.data.amount_payable;
+            // Map the registered mobile sequence fields down to the new element
+            document.getElementById('display-mob').innerText = result.data.registered_mobile;
+
+            // Commit record arrays directly into persistent cookie tracking stacks
+            saveCookieHistory(result.data.account_number, result.data.consumer_name);
+
+            loader.classList.add('hidden');
+            displayBox.classList.remove('hidden');
+        } catch (err) {
+            loader.classList.add('hidden');
+            displayError(err.message);
+        } finally {
+            btn.disabled = false;
+            btn.innerHTML = '<span id="btn-text">Execute</span><i class="fa-solid fa-circle-nodes ml-2"></i>';
+        }
+    }
+
+    function displayError(msg) {
+        const banner = document.getElementById('error-banner');
+        document.getElementById('error-text').innerText = msg;
+        banner.classList.remove('hidden');
+    }
+    function hideError() { document.getElementById('error-banner').classList.add('hidden'); }
+
+    // Modal Overlay Interface Controller Mechanics
+    function toggleModal(show) {
+        const modal = document.getElementById('faq-modal');
+        const contentBox = modal.querySelector('.glass-card');
+        if (show) {
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            contentBox.classList.replace('scale-95', 'scale-100');
+            document.body.style.overflow = 'hidden';
+        } else {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            contentBox.classList.replace('scale-100', 'scale-95');
+            document.body.style.overflow = '';
+        }
+    }
+
+    document.getElementById('faq-modal').addEventListener('click', () => toggleModal(false));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') toggleModal(false); });
+    document.getElementById('account-input').addEventListener('keypress', (e) => { if (e.key === 'Enter') performQuery(); });
+</script>
 </body>
 </html>

@@ -1,4 +1,6 @@
 import os
+import random
+
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -13,7 +15,7 @@ app = FastAPI(
 
 
 # Core extraction logic mapping
-def extract_dhbvn_data(account_no: str, mobile_no: str, email: str) -> dict:
+def extract_dhbvn_data(account_no: str) -> dict:
     url = "https://epayment.dhbvn.org.in/b2cpaybill.aspx"
 
     headers = {
@@ -50,9 +52,9 @@ def extract_dhbvn_data(account_no: str, mobile_no: str, email: str) -> dict:
             ],
             "txtAccountNo": account_no,
             "lblMobSearch": "",
-            "txtmobile": mobile_no,
-            "txtemail": email,
-            "txtcaptcha": "4321",  # Frontend bypass bypass token value
+            "txtmobile": "9988776655",
+            "txtemail": "",
+            "txtcaptcha": str(random.randint(1111, 9999)),  # Frontend bypass bypass token value
             "btnsubmit": "Proceed",
             "lblAcNo": "",
             "lblConsumerName": "",
@@ -99,11 +101,9 @@ def extract_dhbvn_data(account_no: str, mobile_no: str, email: str) -> dict:
 
 @app.get("/api/lookup")
 async def lookup_account(
-        account_no: str = Query(..., description="Target Consumer ID"),
-        mobile_no: str = Query("8899773344", description="Fallback routing target contact line"),
-        email: str = Query("dummymail88998877@gmail.com", description="Fallback routing context destination mailbox")
+        account_no: str = Query(..., description="Target Consumer ID")
 ):
-    result = extract_dhbvn_data(account_no, mobile_no, email)
+    result = extract_dhbvn_data(account_no)
     if not result["success"]:
         raise HTTPException(status_code=400, detail=result["message"])
     return result

@@ -4,20 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>DHBVN-Lens | Dakshin Haryana Electricity Bill ID Details Lookup Tool</title>
-    <meta name="title" content="DHBVN-Lens | Dakshin Haryana Electricity Bill ID Details Lookup Tool">
-    <meta name="description"
-          content="Free open-source OSINT utility interface to fetch account balances, consumer names, addresses, and billing metrics from DHBVN utility numbers seamlessly.">
-    <meta name="keywords"
-          content="dhbvn bill check, check dhbvn online balance, dakshin haryana bijli vitran nigam account finder, check electricity bill haryana, dhbvn osint engine">
+    <!-- Primary Meta Tags -->
+    <title>DHBVN Bill Check Online | Dakshin Haryana Electricity Balance & Details</title>
+    <meta name="title" content="DHBVN Bill Check Online | Dakshin Haryana Electricity Balance & Details">
+    <meta name="description" content="Check your DHBVN electricity bill balance, pending amount, consumer details, and account status online by entering your 10-digit account number.">
+    <meta name="keywords" content="dhbvn bill check, check dhbvn online balance, dhbvn consumer name lookup, haryana electricity bill balance, dhbvn bill amount, faridabad dhbvn bill check">
 
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dhbvn-lens.vercel.app/">
-    <meta property="og:title" content="DHBVN-Lens | Utility Discovery Platform">
-    <meta property="og:description"
-          content="Free open-source OSINT utility interface to fetch account balances, consumer names, addresses, and billing metrics from DHBVN utility numbers seamlessly.">
-    <meta property="og:image"
-          content="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://dhbvn-bill-fetcher.vercel.app/">
+    <meta property="og:title" content="DHBVN Bill Check Online | Dakshin Haryana Electricity Balance & Details">
+    <meta property="og:description" content="Quickly check your DHBVN electricity bill amount, consumer name, and billing details online.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dhbvn-bill-fetcher.vercel.app/">
+    <meta property="twitter:title" content="DHBVN Bill Check Online | Dakshin Haryana Electricity Balance & Details">
+    <meta property="twitter:description" content="Quickly check your DHBVN electricity bill amount, consumer name, and billing details online.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- WebApp Schema for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "DHBVN Bill Fetcher",
+      "url": "https://dhbvn-bill-fetcher.vercel.app/",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "description": "Fetch Dakshin Haryana Bijli Vitran Nigam (DHBVN) account balances, connection status, and electricity bills.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      }
+    }
+    </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
           rel="stylesheet">
@@ -66,14 +89,14 @@
         ::-webkit-scrollbar-thumb:hover { background: #10B981; }
     </style>
 
-    <meta name="google-site-verification" content="ikQjMXvBiUJN5W9vMTwcojfHEsGPABzZHzY47WTrdQQ" />
+    <meta name="google-site-verification" content="ikQjMXvBiUJN5W9vMTwcojfHEsGPABzZHzY47WTrdQQ"/>
 
     <script>
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
 
-<!--    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">-->
+    <!--    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">-->
 </head>
 
 <body class="text-gray-100 min-h-[100dvh] flex flex-col items-center overflow-x-hidden overflow-y-scroll relative text-xs sm:text-sm selection:bg-brand selection:text-white">
@@ -93,8 +116,7 @@
         <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-brand mb-1 tracking-tight drop-shadow-sm">
             <i class="fa-solid fa-bolt mr-1.5 text-emerald-400"></i>DHBVN-Lens
         </h1>
-        <p class="text-emerald-300/80 text-xs sm:text-sm font-light">Dakshin Haryana Electricity Bill Registry Analysis
-            Engine</p>
+        <p class="text-emerald-300/80 text-xs sm:text-sm font-light">Dakshin Haryana Electricity Bill Check Online</p>
 
         <div id="quote-box"
              class="mt-2 opacity-75 text-[11px] sm:text-xs italic text-teal-300 max-w-md mx-auto transition-opacity duration-500 px-2">
@@ -201,7 +223,12 @@
                 </div>
             </div>
         </div>
-
+        <!-- Static SEO Content to rank for user queries -->
+        <article class="mt-5 bg-emerald-950/20 p-3 sm:p-4 rounded-xl border border-emerald-800/50 shadow-inner">
+            <h3 class="text-lg font-semibold text-gray-200 mb-2">How to Check & Download Your DHBVN Electricity Bill</h3>
+            <p class="mb-4">Enter your 10-digit Dakshin Haryana Bijli Vitran Nigam (DHBVN) account number in the form above to instantly securely fetch your current bill balance, registered consumer details, and payment history.</p>
+            <p>Whether you are in Faridabad or elsewhere in Haryana, once the details load, you can click the <strong>Download PDF</strong> button to generate a digital copy of your outstanding utility balance for your personal records.</p>
+        </article>
     </div>
 </main>
 
